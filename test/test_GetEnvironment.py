@@ -7,5 +7,5 @@ def test_GetEnvironment():
 
     getEnvironment = wb.macro('GetEnvironment')
     
-    assert os.environ["TEST"] == "dev"
-    assert getEnvironment() == "dev"
+    assert os.environ["TEST"] == "dev"    # Passes - the env variable is set
+    assert getEnvironment() == "dev"      # Fails - VBA code cannot access the "TEST" env variable
