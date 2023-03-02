@@ -1,0 +1,4 @@
+Temp excel file
+~$*.xls*
+
+.pytest_cache/
