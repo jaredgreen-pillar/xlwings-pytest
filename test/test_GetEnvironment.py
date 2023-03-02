@@ -1,7 +1,7 @@
 import xlwings as xw
 import os
 
-def test_isDeveloper():
+def test_GetEnvironment():
     os.environ["TEST"] = "dev"
     wb = xw.Book('VBAWorkbook.xlsm')
 
